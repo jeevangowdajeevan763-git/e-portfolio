@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeevangowda - B.E. Computer Science & Engineering (AI & ML) Student. Passionate about AI, Machine Learning, and Web Development.">
+    <meta name="keywords" content="Jeevangowda, CSE, AI ML Student, REVA University, Portfolio, Python, C Programming, Web Development">
+    <meta name="author" content="Jeevangowda">
+    <title>Jeevangowda | CSE (AI & ML) Student Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">
+                <span class="brand-bracket">&lt;</span>JG<span class="brand-bracket">/&gt;</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#certifications" class="nav-item">Certifications</a>
+                <a href="#achievements" class="nav-item">Achievements</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mob-link">Home</a>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#education" class="mob-link">Education</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#certifications" class="mob-link">Certifications</a>
+        <a href="#achievements" class="mob-link">Achievements</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="particle" style="--x:10%;--y:20%;--size:4px;--delay:0s"></div>
+            <div class="particle" style="--x:80%;--y:10%;--size:6px;--delay:1s"></div>
+            <div class="particle" style="--x:30%;--y:70%;--size:3px;--delay:2s"></div>
+            <div class="particle" style="--x:70%;--y:60%;--size:5px;--delay:0.5s"></div>
+            <div class="particle" style="--x:50%;--y:30%;--size:4px;--delay:1.5s"></div>
+            <div class="particle" style="--x:90%;--y:80%;--size:3px;--delay:2.5s"></div>
+            <div class="particle" style="--x:20%;--y:90%;--size:5px;--delay:3s"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <!-- Profile Image -->
+            <div class="profile-wrapper" data-aos="zoom-in">
+                <div class="profile-ring">
+                    <div class="profile-ring-inner">
+                        <img src="assets/profile.jpg" alt="Jeevangowda - CSE (AI & ML) Student" class="profile-img">
+                    </div>
+                </div>
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Open to Opportunities
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="hero-text" data-aos="fade-up">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Jeevangowda</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-static">B.E. AI & ML Student at&nbsp;</span>
+                    <span class="hero-title-highlight">REVA University</span>
+                </div>
+                <p class="hero-intro">
+                    Passionate about technology, artificial intelligence, programming, and continuous learning. Eager to solve complex challenges and build impactful software solutions.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="https://www.linkedin.com/in/jeevangowda-7b41573a7" target="_blank" class="btn btn-primary" id="linkedinBtn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        View LinkedIn Profile
+                    </a>
+                    <a href="#resume" class="btn btn-outline" id="resumeCTA">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-ghost" id="contactBtn">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num" data-count="3">0</span>
+                        <span class="stat-label">Core Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="8">0</span>
+                        <span class="stat-label">Key Skills</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="1">0</span>
+                        <span class="stat-label">Year Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Image card -->
+                <div class="about-img-card glass-card" data-aos="fade-right">
+                    <img src="assets/profile.jpg" alt="Jeevangowda" class="about-img">
+                    <div class="about-img-deco">
+                        <div class="deco-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>B.E. CSE (AI & ML)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="about-info" data-aos="fade-left">
+                    <h3 class="about-sub">CS & Engineering (AI & ML) Student & Tech Innovator</h3>
+                    <p class="about-text">
+                        I am <strong>Jeevangowda</strong>, currently a 1st-year student pursuing my Bachelor of Engineering (B.E.) in <strong>Computer Science & Engineering (Artificial Intelligence & Machine Learning)</strong> at <strong>REVA University</strong>, Bengaluru. 
+                    </p>
+                    <p class="about-text">
+                        My primary academic focus is on building a robust understanding of computer science fundamentals, design patterns, and programming languages like Python and C. I am fascinated by the rapid development in artificial intelligence and machine learning and want to contribute to the field.
+                    </p>
+                    <div class="career-goals" style="margin-top:20px; padding-top:20px; border-top:1px solid var(--border);">
+                        <h4 style="font-family:var(--font-heading); color:var(--text-primary); margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-bullseye" style="color:var(--accent-blue);"></i> Career Goals
+                        </h4>
+                        <p class="about-text">
+                            My goal is to build state-of-the-art technological solutions that address real-world needs, while eventually transitioning into public service and leadership roles to drive massive digital transformations that support communities.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Artificial Intelligence</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Programming & Logic</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Continuous Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="about-info-grid">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-user"></i> Name</span>
+                            <span class="info-value">Jeevangowda</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-university"></i> University</span>
+                            <span class="info-value">REVA University</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree</span>
+                            <span class="info-value">B.E. – CSE (AI & ML)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                            <span class="info-value">Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Background</span>
+                <h2 class="section-title">Edu<span class="gradient-text">cation</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="edu-timeline">
+                <!-- REVA University -->
+                <div class="edu-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-icon-wrap">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <div>
+                                <h3 class="edu-institution">REVA University</h3>
+                                <p class="edu-degree">Bachelor of Engineering (B.E.)</p>
+                                <p class="edu-program">Computer Science & Engineering (Artificial Intelligence & Machine Learning)</p>
+                            </div>
+                            <div class="edu-badge current-badge">
+                                <i class="fa-solid fa-circle-dot"></i> 1st Year (Present)
+                            </div>
+                        </div>
+                        <div class="edu-details">
+                            <span class="edu-detail"><i class="fa-solid fa-calendar"></i> 2025 – 2029 (Expected)</span>
+                            <span class="edu-detail"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</span>
+                        </div>
+                        <p class="edu-description">
+                            Acquiring core engineering basics, fundamentals of computer science, mathematical foundations of machine learning, programming logics in Python and C, and database concepts. Actively participating in workshops and hands-on coding assignments.
+                        </p>
+                        <div class="edu-tags">
+                            <span class="edu-tag">Python</span>
+                            <span class="edu-tag">C Programming</span>
+                            <span class="edu-tag">Data Structures Basics</span>
+                            <span class="edu-tag">Calculus & Linear Algebra</span>
+                            <span class="edu-tag">AI Principles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pre-University Education -->
+                <div class="edu-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-icon-wrap secondary">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <div>
+                                <h3 class="edu-institution">Pre-University College</h3>
+                                <p class="edu-degree">12th Grade / PUC – Science Stream</p>
+                                <p class="edu-program">Physics, Chemistry, Mathematics & Computer Science</p>
+                            </div>
+                            <div class="edu-badge completed-badge">
+                                <i class="fa-solid fa-circle-check"></i> Completed
+                            </div>
+                        </div>
+                        <div class="edu-details">
+                            <span class="edu-detail"><i class="fa-solid fa-calendar"></i> 2023 - 2025</span>
+                            <span class="edu-detail"><i class="fa-solid fa-location-dot"></i> Karnataka, India</span>
+                        </div>
+                        <p class="edu-description">
+                            Developed a solid foundation in sciences, mathematical logic, and introductory programming, creating a clear pathway to pursue computer science engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card: Python -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-icon" style="--color:#ffd166">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h4 class="skill-name">Python</h4>
+                    <p class="skill-desc">Basic programming, logic building, utility scripting, and library usage (Pandas, Numpy).</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="80">
+                            <div class="skill-fill" style="--clr:#ffd166"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: C Programming -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon" style="--color:#00b4d8">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="skill-name">C Programming</h4>
+                    <p class="skill-desc">Procedural paradigms, memory concepts, pointer basics, and loop logics.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="75">
+                            <div class="skill-fill" style="--clr:#00b4d8"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: HTML5 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon" style="--color:#e44d26">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h4 class="skill-name">HTML</h4>
+                    <p class="skill-desc">Document structures, formatting layout, forms, and semantic HTML5 standard tags.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="85">
+                            <div class="skill-fill" style="--clr:#e44d26"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: CSS3 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon" style="--color:#264de4">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h4 class="skill-name">CSS</h4>
+                    <p class="skill-desc">Responsive styling, Flexbox, Grid, keyframes animation, variables, and typography rules.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="80">
+                            <div class="skill-fill" style="--clr:#264de4"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: JavaScript -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-icon" style="--color:#f7df1e">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h4 class="skill-name">JavaScript</h4>
+                    <p class="skill-desc">DOM interactions, event listeners, basic functional structures, and async operations.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="72">
+                            <div class="skill-fill" style="--clr:#f7df1e"></div>
+                        </div>
+                        <span class="skill-percent">72%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Git & GitHub -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon" style="--color:#f34f29">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <h4 class="skill-name">Git & GitHub</h4>
+                    <p class="skill-desc">Version control fundamentals, pushing repos, making commits, and collaboration flows.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="78">
+                            <div class="skill-fill" style="--clr:#f34f29"></div>
+                        </div>
+                        <span class="skill-percent">78%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: AI Basics -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-icon" style="--color:#10b981">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4 class="skill-name">Artificial Intelligence Basics</h4>
+                    <p class="skill-desc">Intro to neural networks, machine learning paradigms, and data patterns classification.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="65">
+                            <div class="skill-fill" style="--clr:#10b981"></div>
+                        </div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Data Analysis -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon" style="--color:#f59e0b">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+                    <h4 class="skill-name">Data Analysis</h4>
+                    <p class="skill-desc">Basic statistics, data scrubbing, correlation findings, and visual graph generation.</p>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="70">
+                            <div class="skill-fill" style="--clr:#f59e0b"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: 2D Graphics Editor -->
+                <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="project-img-wrap">
+                        <div class="project-img-placeholder c-project">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="project-link-btn" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link-btn" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category-badge">C / Graphics</span>
+                        <h3 class="project-title">2D Graphics Editor (ACP Mini Project)</h3>
+                        <p class="project-desc">
+                            A fully-featured 2D graphics editing software built in C using the graphics.h library. Implements basic geometric shapes rendering, color selection palettes, eraser, and simple vector drawing capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">graphics.h</span>
+                            <span class="tech-badge">2D Drawing</span>
+                            <span class="tech-badge">Algorithms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="project-action-link">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-action-link demo">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Python Mini Projects -->
+                <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img-wrap">
+                        <div class="project-img-placeholder purple-project">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="project-link-btn">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category-badge">Python / CLI</span>
+                        <h3 class="project-title">Python Mini Projects</h3>
+                        <p class="project-desc">
+                            A curated suite of terminal-based utility projects including contact managers, basic algorithms simulators, unit conversion programs, and CLI-based adventure systems using core object-oriented structures.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OOP</span>
+                            <span class="tech-badge">CLI Tooling</span>
+                            <span class="tech-badge">File Handling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="project-action-link">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-action-link demo">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Academic Assignments -->
+                <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-img-wrap">
+                        <div class="project-img-placeholder web-project">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="project-link-btn">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category-badge">Assignments / Lab</span>
+                        <h3 class="project-title">Academic Assignments</h3>
+                        <p class="project-desc">
+                            Structured repository housing course-related practical lab code sheets, data structure assignments, basic math calculations models, and minor web dev tasks completed during the college coursework.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Data Science Basics</span>
+                            <span class="tech-badge">Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="project-action-link">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-action-link demo">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifi<span class="gradient-text">cations</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Cert 1 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-icon" style="--color:#8b5cf6">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4 class="skill-name">[Certificate Name Placeholder 1]</h4>
+                    <p class="skill-desc">[Issuing Organization Placeholder 1]</p>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Issued Month Year</p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon" style="--color:#3b82f6">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h4 class="skill-name">[Certificate Name Placeholder 2]</h4>
+                    <p class="skill-desc">[Issuing Organization Placeholder 2]</p>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Issued Month Year</p>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon" style="--color:#06b6d4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="skill-name">[Certificate Name Placeholder 3]</h4>
+                    <p class="skill-desc">[Issuing Organization Placeholder 3]</p>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Issued Month Year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Milestones</span>
+                <h2 class="section-title">Achieve<span class="gradient-text">ments</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Achievement 1 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-icon" style="--color:#f59e0b">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h4 class="skill-name">Academic Excellence</h4>
+                    <p class="skill-desc">Consistently maintained top standing during academic terms and foundational computer labs.</p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon" style="--color:#06b6d4">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h4 class="skill-name">Technical Workshops</h4>
+                    <p class="skill-desc">Successfully participated in and completed core hands-on bootcamps for AI foundations and Python logic building.</p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon" style="--color:#ef4444">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h4 class="skill-name">Hackathons & Competitions</h4>
+                    <p class="skill-desc">Placeholder section for future team hackathon engagements, coding league championships, and technology challenge awards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESUME ===================== -->
+    <section id="resume" class="section resume-section" style="background:var(--bg-secondary); border-top:1px solid var(--border);">
+        <div class="container" style="text-align:center;">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Profile Summary</span>
+                <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="resume-wrapper" data-aos="zoom-in" style="max-width:600px; margin:0 auto; padding:40px; background:var(--bg-card); border-radius:var(--radius-lg); border:1px solid var(--border); box-shadow:var(--card-shadow);">
+                <i class="fa-regular fa-file-pdf" style="font-size:4rem; color:var(--accent-purple); margin-bottom:20px; display:block;"></i>
+                <h3 style="font-family:var(--font-heading); font-size:1.3rem; margin-bottom:12px;">Curriculum Vitae</h3>
+                <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:28px;">
+                    Download my complete academic resume containing detailed coursework credits, minor project documentations, achievements, and contact details.
+                </p>
+                <a href="assets/resume.pdf" download class="btn btn-primary btn-large" id="resumeBtn" style="padding:15px 40px; border-radius:var(--radius-md);">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Download Resume PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">
+                    Whether you have a project idea, academic query, or just want to connect — I'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Cards -->
+                <div class="contact-info-col" data-aos="fade-right">
+                    <div class="contact-info-card glass-card">
+                        <div class="ci-icon email-ci"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="ci-text">
+                            <span class="ci-label">Email Me At</span>
+                            <a href="mailto:jeevangowdajeevan763@gmail.com" class="ci-value">jeevangowdajeevan763@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card glass-card">
+                        <div class="ci-icon phone-ci"><i class="fa-solid fa-phone"></i></div>
+                        <div class="ci-text">
+                            <span class="ci-label">Call Me At</span>
+                            <span class="ci-value">[your-phone-placeholder]</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-card glass-card">
+                        <div class="ci-icon location-ci"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="ci-text">
+                            <span class="ci-label">Based In</span>
+                            <span class="ci-value">Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Row -->
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/jeevangowda-7b41573a7" target="_blank" class="social-btn linkedin-btn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="social-btn github-btn" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:jeevangowdajeevan763@gmail.com" class="social-btn email-btn" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-col" data-aos="fade-left">
+                    <form class="contact-form glass-card" id="contactForm" novalidate>
+                        <h3 class="form-title">Send Me a Message</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">First Name *</label>
+                                <div class="input-wrap">
+                                    <i class="fa-solid fa-user input-prefix"></i>
+                                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name *</label>
+                                <div class="input-wrap">
+                                    <i class="fa-solid fa-user input-prefix"></i>
+                                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <div class="input-wrap">
+                                    <i class="fa-solid fa-envelope input-prefix"></i>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <div class="input-wrap">
+                                <i class="fa-solid fa-tag input-prefix"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Project Discussion / Question" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <div class="input-wrap textarea-wrap">
+                                <i class="fa-solid fa-message input-prefix"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="Hi Jeevangowda, I'd love to..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span class="btn-text-inner">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Message
+                            </span>
+                            <span class="btn-loading" style="display:none">
+                                <i class="fa-solid fa-circle-notch fa-spin"></i> Sending...
+                            </span>
+                        </button>
+
+                        <div class="form-success" id="formSuccess" style="display:none">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="nav-brand footer-logo">
+                    <span class="brand-bracket">&lt;</span>JG<span class="brand-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Jeevangowda – Computer Science & Engineering (AI & ML) Student | Developer</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/jeevangowda-7b41573a7" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/jeevangowdajeevan763-git" target="_blank" class="footer-social-link" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:jeevangowdajeevan763@gmail.com" class="footer-social-link" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <p class="footer-copy">&copy; 2026 Jeevangowda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
